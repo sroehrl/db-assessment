@@ -6,7 +6,7 @@ Clone/Fork the repository and execute the setup.sql locally to achieve the follo
 ![schema](assets/diagram.png)
 
 ## Hacktoberfest
-Feel free to register with hacktoberfest to make this count as a contribution.
+Feel free to register with [hacktoberfest](https://hacktoberfest.com/) to make this count as a contribution.
 
 ## Go to [tasks](Tasks.md) to solve the challenges
 
