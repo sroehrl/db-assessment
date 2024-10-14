@@ -1,19 +1,17 @@
 create table animal -- or replace
 (
-    id   int auto_increment primary key,
-        primary key,
+    id   int primary key auto_increment,
     name varchar(255) null
 );
 
 create table extremity -- or replace
 (
-    id       int auto_increment,
-        primary key,
+    id       int primary key auto_increment,
     animalId int not null,
     legs     int null,
     tails    int null,
     constraint extremity_animal_id_fk
-        foreign key (animalId) references animal (id)
+        foreign key (animalId) references animal (id) -- there is an error here
 );
 
 create table pet -- or replace
@@ -24,8 +22,8 @@ create table pet -- or replace
     givenName   varchar(255) not null,
     dateOfBirth datetime     not null,
     gender      tinyint      not null -- comment '0 = female, 1 = male',
-    constraint pet_animal_id_fk
-        foreign key (animalId) references animal (id)
+    -- constraint pet_animal_id_fk
+    --     foreign key (animalId) references animal (id)
 );
 
 INSERT INTO animal (id, name) VALUES
