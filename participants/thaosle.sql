@@ -10,9 +10,9 @@
 -- that would have filter out any birthdays that happened 3-4 years ago
 --  (there should be 2 records)
     -- Commands:
-        -- SELECT uuid
+        -- SELECT *
         -- FROM pet
-        -- WHERE dateOfBirth > '2019-08-20' AND dateOfBirth < '2024-10-12'
+        -- WHERE YEAR(CURRENT_DATE()) - YEAR(dateOfBirth) = 3 OR YEAR(CURRENT_DATE() - YEAR(dateOfBirth) = 4
 -- Question 3
 -- 
 -- Question 4
