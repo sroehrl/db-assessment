@@ -13,7 +13,7 @@
    that would have filter out any birthdays that happened 3-4 years ago
    (there should be 2 records)
     Commands:
-        SELECT uuids, givenName
+        SELECT uuid, givenName, dateOfBirth
         FROM pet
         WHERE YEAR(NOW()) - YEAR(dateOfBirth) = 3 OR YEAR(NOW()) - YEAR(dateOfBirth) = 4
 
