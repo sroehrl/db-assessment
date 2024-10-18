@@ -15,7 +15,7 @@
     Commands:
         SELECT *
         FROM pet
-        WHERE year(current_date()) - YEAR(dateOfBirth) = 3 OR year(current_date()) - YEAR(dateOfBirth) = 4
+        WHERE YEAR(NOW()) - YEAR(dateOfBirth) = 3 OR YEAR(NOW()) - YEAR(dateOfBirth) = 4
 
 */
 -- Question 3
