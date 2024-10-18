@@ -54,12 +54,9 @@
 -- Question 6
 /* The ratio is ~44% male and ~56% female. (5:4 -> F:M)
     Commands (for separate records with just the count for each gender):
-        SELECT (SELECT COUNT(gender)
-                FROM pet
-                WHERE gender = 0) as 'Female',
-        (SELECT COUNT(gender)
-                FROM pet
-                WHERE gender = 1) as 'Male'
+        SELECT DISTINCT(gender), COUNT(gender) AS "Number"
+        FROM pet
+        GROUP BY gender
 */
 -- Question 7
 /* The pets that would be celebrated at this event would be
