@@ -26,8 +26,8 @@
 /* 
 */
 -- Question 5
-/* The animal name Paul.
-    SELECT givenName, dateOfBirth, legs
+/* The animal name Paul, the piegon.
+    SELECT givenName, dateOfBirth, legs, animal.name -- I just wanted to see the type of animal
     FROM pet
     JOIN extremity ON extremity.animalid = pet.animalID
     JOIN animal ON animal.id = pet.animalID
@@ -37,7 +37,7 @@
 
 */
 -- Question 6
-/* The ratio is 50% male and 50% female. (5:4 -> M:F)
+/* The ratio is ~44% male and ~56% female. (5:4 -> F:M)
     Commands (for separate records with just the count for each gender):
         SELECT (SELECT COUNT(gender)
                 FROM pet
@@ -48,7 +48,9 @@
 */
 -- Question 7
 /* The pets that would be celebrated at this event would be
-
+        SELECT *
+        FROM pet
+        WHERE MONTH(dateOfBirth) <= 8 AND MONTH(dateOfBirth) < = 6
 */
 -- Question 8 (first version)
 /*
