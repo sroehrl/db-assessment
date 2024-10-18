@@ -54,6 +54,18 @@
 */
 -- Question 8 (first version)
 /*
+    I believe you can just use a integer variable that could act as
+    a boolean value, to see if there are tails or no tails and it will
+    just output a message specifying if there are any tails on teh animal.
+        Logic Breif:
+            If there is a tail = 1 *or greater than one, if there are more animals that what was specified all ready* (msg: "Tail")
+            If there is NO tail = 0, (msg: "No Tails")
+        SELECT
+        CASE
+            WHEN tails > 0 THEN "TAILs"
+            ELSE "No Tails"
+        END AS TailStatus, extremity.legs, extremity.id, extremity.animalId
+        FROM extremity;
 */
 -- Question 8 (second version)
 /* The commonalities that could appear __
