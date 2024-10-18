@@ -26,7 +26,14 @@
 /* 
 */
 -- Question 5
-/* Berta the snake.
+/* The animal name Paul.
+    SELECT givenName, dateOfBirth, legs
+    FROM pet
+    JOIN extremity ON extremity.animalid = pet.animalID
+    JOIN animal ON animal.id = pet.animalID
+    WHERE legs < 3
+    ORDER BY dateOfBirth ASC
+    LIMIT 1
 
 */
 -- Question 6
