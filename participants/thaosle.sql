@@ -19,12 +19,12 @@
 
 */
 -- Question 3
-/* The number of pets we have for each type of an (come back)
+/* 
+    -- Still need to put in view
 
 */
 -- Question 4
 /* 
-    -- Still need to put in view
     SELECT pet.animalid, givenName, name
     FROM pet
     JOIN extremity ON extremity.animalId = pet.animalId
