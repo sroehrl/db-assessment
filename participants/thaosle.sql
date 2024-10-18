@@ -1,4 +1,4 @@
--- Question 1 (redo!!)
+-- Question 1
 /* The youngest pet is Anna. (birthday is 2024-10-12)
     Commands:
         SELECT pet.givenName, pet.dateOfBirth, animal.name AS "Animal Type"
@@ -21,6 +21,14 @@
 -- Question 3
 /* 
     -- Still need to put in view
+    CREATE VIEW NumPetType AS
+    SELECT pet.animalID, extremity.id, animal.name
+    FRIN pet, animal, extremity
+    WHERE animal.id = extremity.id AND pet.animalID = extremity.animalID
+
+    -- Displays the view object made
+    SELECT *
+    FROM dummyEight
 
 */
 -- Question 4
