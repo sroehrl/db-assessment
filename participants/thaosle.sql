@@ -24,6 +24,12 @@
 */
 -- Question 4
 /* 
+    -- Still need to put in view
+    SELECT pet.animalid, givenName, name
+    FROM pet
+    JOIN extremity ON extremity.animalId = pet.animalId
+    JOIN animal ON animal.id = extremity.id
+    ORDER BY name
 */
 -- Question 5
 /* The animal name Paul, the piegon.
