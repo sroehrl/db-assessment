@@ -1,8 +1,10 @@
--- Question 1
+-- Question 1 (redo!!)
 /* The youngest pet is Anna. (birthday is 2024-10-12)
     Commands:
-        SELECT *
+        SELECT pet.givenName, pet.dateOfBirth, animal.name AS "Animal Type"
         FROM pet
+        JOIN extremity ON extremity.animalID = pet.animalID
+        JOIN animala ON animal.id
         ORDER BY dateOfBirth DESC
         LIMIT 1
 */
@@ -13,29 +15,38 @@
     Commands:
         SELECT *
         FROM pet
-        WHERE YEAR(CURRENT_DATE()) - YEAR(dateOfBirth) = 3 OR YEAR(CURRENT_DATE() - YEAR(dateOfBirth) = 4
+        WHERE year(current_date()) - YEAR(dateOfBirth) = 3 OR year(current_date()) - YEAR(dateOfBirth) = 4
+
 */
 -- Question 3
-/* 
+/* The number of pets we have for each type of an (come back)
 
 */
 -- Question 4
---
+/* 
+*/
 -- Question 5
--- 
+/* Berta the snake.
+
+*/
 -- Question 6
-/* The ratio is 50% male and 50% female. (3:3 -> M:F)
+/* The ratio is 50% male and 50% female. (5:4 -> M:F)
     Commands (for separate records with just the count for each gender):
         SELECT (SELECT COUNT(gender)
                 FROM pet
                 WHERE gender = 0) as 'Female',
-                (SELECT COUNT(gender)
+        (SELECT COUNT(gender)
                 FROM pet
                 WHERE gender = 1) as 'Male'
 */
 -- Question 7
---
+/* The pets that would be celebrated at this event would be
+
+*/
 -- Question 8 (first version)
---
+/*
+*/
 -- Question 8 (second version)
---
+/* The commonalities that could appear __
+   A data-related questions could arise from information __
+*/
