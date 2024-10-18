@@ -4,7 +4,7 @@
         SELECT pet.givenName, pet.dateOfBirth, animal.name AS "Animal Type"
         FROM pet
         JOIN extremity ON extremity.animalID = pet.animalID
-        JOIN animala ON animal.id
+        JOIN animala ON animal.id = extremity.id
         ORDER BY dateOfBirth DESC
         LIMIT 1
 */
