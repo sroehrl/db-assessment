@@ -20,15 +20,16 @@
 */
 -- Question 3
 /* 
-    -- Still need to put in view
+    -- Creating viewable object
     CREATE VIEW NumPetType AS
-    SELECT pet.animalID, extremity.id, animal.name
-    FRIN pet, animal, extremity
+    SELECT COUNT(animal.name) AS "# of types", animal.name
+    FROM pet, animal, extremity
     WHERE animal.id = extremity.id AND pet.animalID = extremity.animalID
+    GROUP BY animal.name
 
     -- Displays the view object made
     SELECT *
-    FROM dummyEight
+    FROM NumPetType
 
 */
 -- Question 4
