@@ -68,6 +68,13 @@
         FROM extremity;
 */
 -- Question 8 (second version)
-/* The commonalities that could appear __
-   A data-related questions could arise from information __
+/* The commonalities that could appear whcih is groups that already exist in
+    the tables in the database such as gender, dateOfBirth, and the animal type.
+    In addition to maybe other groups such as heatlth status, wieght, and vaccines
+    that were already recieved or not recieved, and if the pet is already on medications or
+    not.
+   A data-related questions could arise from information would be the dosage of how much medication
+   the pet is taking, what sort of diet the pet is on and how much of a portion size they need to take,
+   also do you need a selection for the veterian to place personal notes for the pet to follow to maintain
+   or imporve the condition of the pet.
 */
