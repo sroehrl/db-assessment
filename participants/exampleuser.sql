@@ -1,2 +1,2 @@
-# Question 1
-SELECt * from `animal` WHERE `name` LIKE "dog";
+-- Question 1
+SELECT * from animal WHERE name LIKE "dog";
