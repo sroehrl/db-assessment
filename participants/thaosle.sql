@@ -4,7 +4,7 @@
         SELECT pet.givenName, pet.dateOfBirth, animal.name AS "Animal Type"
         FROM pet
         JOIN extremity ON extremity.animalID = pet.animalID
-        JOIN animala ON animal.id = extremity.id
+        JOIN animal ON animal.id = extremity.id
         ORDER BY dateOfBirth DESC
         LIMIT 1
 */
@@ -57,6 +57,18 @@
         SELECT DISTINCT(gender), COUNT(gender) AS "Number"
         FROM pet
         GROUP BY gender
+
+    The more description version description:
+        -- START OF OPTIONAL
+        SELECT
+        CASE
+            WHEN gender = 0 THEN "Female"
+            ELSE "Male"
+        END AS Description, COUNT(gender) AS "Number"
+        FROM pet
+        GROUP BY gender
+        -- END OF OPTIONAL
+
 */
 -- Question 7
 /* The pets that would be celebrated at this event would be
