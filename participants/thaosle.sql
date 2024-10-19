@@ -74,7 +74,7 @@
 /* The pets that would be celebrated at this event would be
         SELECT *
         FROM pet
-        WHERE MONTH(dateOfBirth) <= 8 AND MONTH(dateOfBirth) < = 6
+        WHERE MONTH(dateOfBirth) <= 8 AND MONTH(dateOfBirth) >= 6
 */
 -- Question 8 (first version)
 /*
